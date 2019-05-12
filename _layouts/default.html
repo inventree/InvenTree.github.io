@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    {% include sidenav.html %}
+
+    <div id='content' class='main page-wrapper container'>
+        {% include top_bar.html %}
+        {{ content }}
+    </div>
+</body>
+</html>
