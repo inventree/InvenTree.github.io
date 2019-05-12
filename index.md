@@ -2,4 +2,4 @@
 title: InvenTree
 ---
 
-Hello world
+InvenTree stock management solution.

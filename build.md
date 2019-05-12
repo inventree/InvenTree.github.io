@@ -1,5 +1,3 @@
 ---
 title: Build
 ---
-
-Build page
