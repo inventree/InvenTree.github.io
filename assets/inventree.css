@@ -44,11 +44,15 @@
     width: 32px;
 }
 
-.main {
+.page-wrapper {
     margin-left: 175px;
     padding: 0px 10px;
     padding-top: 10px;
     padding-left: 20px;
+}
+
+.main {
+    padding-top: 15px;
 }
 
 @media screen and (max-height: 450px) {
