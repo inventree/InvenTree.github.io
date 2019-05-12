@@ -1,0 +1,4 @@
+---
+title: Bill of Materials
+---
+
