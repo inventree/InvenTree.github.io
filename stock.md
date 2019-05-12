@@ -2,4 +2,6 @@
 title: Stock
 --- 
 
-Stock page yo
+# Stock Management
+
+Stock ...

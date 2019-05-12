@@ -9,10 +9,28 @@
     padding-top: 20px;
 }
 
+.sidenav-header {
+    padding-top: 15px;
+}
+
+.sidenav-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.sidenav-logo {
+    width: 125px;
+    float: bottom;
+    height: 100%;
+}
+
 .main {
     margin-left: 175px;
     padding: 0px 10px;
-    padding-top: 20px;
+    padding-top: 35px;
+    padding-left: 20px;
 }
 
 @media screen and (max-height: 450px) {

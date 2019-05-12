@@ -2,4 +2,6 @@
 title: Parts
 ---
 
-Hello? this is the parts page
+# Parts Management
+
+Parts management information here
