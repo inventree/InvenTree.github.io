@@ -1,5 +1,5 @@
 ---
-title: InvenTree Parts Management
+title: InvenTree
 ---
 
 Hello world
