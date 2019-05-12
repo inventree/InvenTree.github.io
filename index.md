@@ -1,5 +1,4 @@
 ---
-permalink: /index/
 title: InvenTree Parts Management
 ---
 
