@@ -38,14 +38,16 @@
 
 .sidenav-logo {
     width: 125px;
-    float: bottom;
-    height: 100%;
+}
+
+.github-logo {
+    width: 32px;
 }
 
 .main {
     margin-left: 175px;
     padding: 0px 10px;
-    padding-top: 35px;
+    padding-top: 10px;
     padding-left: 20px;
 }
 
