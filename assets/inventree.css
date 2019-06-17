@@ -3,15 +3,15 @@
 }
 
 .h2, h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .h3, h3 {
-    font-size: 1.50rem;
+    font-size: 1.25rem;
 }
 
 .h4, h4 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .sidenav {
@@ -59,3 +59,7 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+.img-inline {
+    max-height: 200px;
+}
