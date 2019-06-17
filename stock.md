@@ -1,3 +1,5 @@
 ---
 title: Stock
 --- 
+
+Stock management
