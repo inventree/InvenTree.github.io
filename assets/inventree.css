@@ -62,4 +62,8 @@
 
 .img-inline {
     max-height: 200px;
+    max-width: 100%;
+    border: 1px solid;
+    border-color: #555;
+    border-radius: 2px;
 }
