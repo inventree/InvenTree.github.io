@@ -10,10 +10,12 @@
 
     {% include sidenav.html %}
 
-    <div id='content' class='page-wrapper container'>
+    <div id='page' class='page-wrapper'>
         {% include top_bar.html %}
-        <div class='main'>
-            {{ content }}
+        <div id='content' class='container'>
+            <div class='main'>
+                {{ content }}
+            </div>
         </div>
     </div>
 </body>
