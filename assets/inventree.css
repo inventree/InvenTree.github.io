@@ -16,7 +16,7 @@
 
 .sidenav {
     height: 100%;
-    width: 175px;
+    width: auto;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -40,6 +40,10 @@
     width: 125px;
 }
 
+.sidenav-selected {
+    text-decoration: underline;
+}
+
 .github-logo {
     width: 32px;
 }
@@ -53,6 +57,14 @@
 
 .main {
     padding-top: 15px;
+}
+
+.list-group-sub-item {
+    padding: .5rem .25rem;
+    position: relative;
+    display: block;
+    padding-left: 1.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 @media screen and (max-height: 450px) {
