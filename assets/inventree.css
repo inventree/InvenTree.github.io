@@ -1,3 +1,11 @@
+/* Theme color definitions */
+:root {
+    --color-bg: #FFFFFF;
+    --color-main: #3e3012;
+    --color-primary: #E9D4AA;
+    --color-highlight: #AD8943;
+} 
+
 .h1, h1 {
     font-size: 2.0rem;
 }
@@ -16,17 +24,51 @@
 
 .sidenav {
     height: 100%;
-    width: 175px;
+    width: auto;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-highlight);
 }
 
-.sidenav-header {
-    padding-top: 15px;
+.sidenav-title {
+    color: var(--color-main);
+}
+
+#content {
+    background-color: var(--color-bg);
+    color: var(--color-main);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.title {
+    position: fixed;
+    top: 0;
+    background-color: var(--color-bg);
+    width: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    height: 45px;
+    border-bottom: 2px solid;
+    color: var(--color-highlight);
+    border-color: var(--color-highlight);
+}
+
+body {
+    background-color: var(--color-bg);
 }
 
 .sidenav-footer {
@@ -38,6 +80,10 @@
 
 .sidenav-logo {
     width: 125px;
+}
+
+.sidenav-selected {
+    text-decoration: underline;
 }
 
 .github-logo {
@@ -55,6 +101,37 @@
     padding-top: 15px;
 }
 
+.list-group {
+    padding: 0px;
+}
+
+.sidenav .list-group-item {
+    width: 100%;
+    color: var(--color-highlight);
+    border: none;
+    background-color: var(--color-primary);
+}
+
+.list-group-item a {
+    color: var(--color-highlight);
+}
+
+.sidenav .list-group-sub-item {
+    padding: .5rem .25rem;
+    font-size: .85rem;
+    position: relative;
+    display: block;
+    padding-left: 1.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: none;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+.list-group-sub-item a {
+    color: var(--color-highlight);
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -62,4 +139,8 @@
 
 .img-inline {
     max-height: 200px;
+    max-width: 100%;
+    border: 1px solid;
+    border-color: var(--color-main);
+    border-radius: 2px;
 }

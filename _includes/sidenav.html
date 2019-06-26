@@ -1,25 +1,32 @@
 <div class='sidenav'>
 
-    <div>
+    <div class='sidenav-title'>
         <h1>InvenTree</h1>
-    </div>
-
-    <div class='sidenav-header'>
     </div>
     
     <ul class='list-group'>
-        <li class='list-group-item'><a href='/index.html'>Index</a></li>
-        <li class='list-group-item'><a href='/parts.html'>Parts</a></li>
-        <li class='list-group-item'><a href='/suppliers.html'>Suppliers</li>
-        <li class='list-group-item'><a href='/stock.html'>Stock</a></li>
-        <li class='list-group-item'><a href='/bom.html'>BOM</a></li>
-        <li class='list-group-item'><a href='/build.html'>Build</a></li>
-        <li class='list-group-item'><a href='/extend.html'>Extend</a></li>
+        <li class='list-group-item'>{% include nav_link.html url='/index.html' text='Index' %}</li>
+        <li class='list-group-item'>{% include nav_link.html url='/parts.html' text='Parts' %}</li>
+        {% if page.url contains '/part' %}
+            <li class='list-group-sub-item'>{% include nav_link.html url='/part_detail.html' text='Detail' %}</li>
+            <li class='list-group-sub-item'>{% include nav_link.html url='/part_stock.html' text='Stock' %}</li>
+            <li class='list-group-sub-item'>{% include nav_link.html url='/part_suppliers.html' text='Suppliers' %}</li>
+            <li class='list-group-sub-item'>{% include nav_link.html url='/part_orders.html' text='Purchase Orders' %}</li>
+            <li class='list-group-sub-item'>{% include nav_link.html url='/part_attachments.html' text='Attachments' %}</li>
+        {% endif %}
+        <li class='list-group-item'>{% include nav_link.html url='/stock.html' text='Stock' %}</li>
+        {% if page.url contains '/stock' %}
+            <li class='list-group-sub-item'>{% include nav_link.html url='/stock_adjust.html' text='Adjustments' %}</li>
+        {% endif %}
+        <li class='list-group-item'>{% include nav_link.html url='/suppliers.html' text='Suppliers' %}</li>
+        <li class='list-group-item'>{% include nav_link.html url='/bom.html' text='BOM' %}</li>
+        <li class='list-group-item'>{% include nav_link.html url='/build.html' text='Build' %}</li>
+        <li class='list-group-item'>{% include nav_link.html url='/extend.html' text='Extend' %}</li>
     </ul>
     
     <div class='sidenav-footer'>
-        <img class='sidenav-logo' src='/assets/img/inventree.png' alt='InvenTree Logo'/>
-        <hr>
-        <a href='https://github.com/inventree/'><img class='github-logo' src='/assets/img/github.png' alt='GitHub'/></a>
+        <a href='https://github.com/inventree/'>
+            <img title='View InvenTree on GitHub' class='sidenav-logo' src='/assets/img/inventree.png' alt='InvenTree Logo' max-height='40px' min-height='40px'/>
+        </a>
     </div>
 </div>
