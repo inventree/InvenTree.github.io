@@ -1,9 +1,9 @@
 /* Theme color definitions */
 :root {
     --color-bg: #FFFFFF;
-    --color-main: #3e3012;
-    --color-primary: #E9D4AA;
-    --color-highlight: #AD8943;
+    --color-main: #1D222B;
+    --color-primary: #ABBBD8;
+    --color-highlight: #19489F;
 } 
 
 .h1, h1 {
@@ -54,17 +54,19 @@
 .title {
     position: fixed;
     top: 0;
-    background-color: var(--color-bg);
+    background-color: var(--color-main);
     width: 100%;
     max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 5px;
+    padding-bottom: 15px;
+    margin-left: 175px;
     margin-bottom: 15px;
-    height: 45px;
-    border-bottom: 2px solid;
-    color: var(--color-highlight);
-    border-color: var(--color-highlight);
+    height: 55px;
+    color: var(--color-bg);
+}
+
+.title-string {
+    padding-left: 30px;
 }
 
 body {
