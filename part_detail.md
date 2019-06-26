@@ -4,7 +4,7 @@ title: Part Detail
 
 Each part has a comprehensive detail view which provides information about the particular part.
 
-{% include img.html url="/assets/img/part/part_overview.png" description="Part details" %}
+{% include img.html url="part/part_overview.png" description="Part details" %}
 
 A Part is defined in the system by the following parameters:
 
@@ -21,6 +21,8 @@ A Part is defined in the system by the following parameters:
 **Category** - The Part category is used to group or arrange parts, as per the particular requirements of the user. Categories are arranged in a 'tree' where each category may have multiple child categories.
 
 **URL** - An external URL field is provided to link to an external page. This could be useful the part has extra documentation located on an external server.
+
+**Units** - Units of measure (UoM) for this Part. The default is 'pcs'
 
 ## Part Options
 

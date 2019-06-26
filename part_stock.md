@@ -2,7 +2,7 @@
 title: Part Stock
 ---
 
-The *Part Stock* view shows all the stock items for the selected *Part*. The user can quickly determine how many parts are in stock, where they are located, and the status of each *Stock Item*.
+The *Part Stock* tab shows all the stock items for the selected *Part*. The user can quickly determine how many parts are in stock, where they are located, and the status of each *Stock Item*.
 
 ## Functions
 

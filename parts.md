@@ -10,7 +10,7 @@ Part categories are very flexible and can be easily arranged to match a particul
 
 Each part category also shows a list of sub-categories which exist underneath it.
 
-{% include img.html url="/assets/img/part/part_category.png" description="Parts are arranged in categories" %}
+{% include img.html url="part/part_category.png" description="Parts are arranged in categories" %}
 
 The category part list provides an overview of each part:
 
