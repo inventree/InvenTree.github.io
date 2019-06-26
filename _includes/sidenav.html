@@ -18,6 +18,9 @@
             <li class='list-group-sub-item'>{% include nav_link.html url='/part_attachments.html' text='Attachments' %}</li>
         {% endif %}
         <li class='list-group-item'>{% include nav_link.html url='/stock.html' text='Stock' %}</li>
+        {% if page.url contains '/stock' %}
+            <li class='list-group-sub-item'>{% include nav_link.html url='/stock_adjust.html' text='Adjustments' %}</li>
+        {% endif %}
         <li class='list-group-item'>{% include nav_link.html url='/suppliers.html' text='Suppliers' %}</li>
         <li class='list-group-item'>{% include nav_link.html url='/bom.html' text='BOM' %}</li>
         <li class='list-group-item'>{% include nav_link.html url='/build.html' text='Build' %}</li>
