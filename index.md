@@ -42,11 +42,3 @@ Consume stock items to make new parts
 If the core InvenTree functionality does not meet your particular need, extensibility is available through an external API. Write external programs to interact with the InvenTree database.
 
 [Read more...](/extend.html)
-
-## Technical Stuff
-
-InvenTree is built using Python and Django.
-
-Technical documentation can be found at [inventree.readthedocs.io](https://inventree.readthedocs.io/en/latest/index.html).
-
-Source code is available on [GitHub](https://github.com/inventree).
