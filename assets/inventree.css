@@ -2,8 +2,9 @@
 :root {
     --color-bg: #FFFFFF;
     --color-main: #1D222B;
-    --color-primary: #ABBBD8;
+    --color-primary: #f8f8f8;
     --color-highlight: #19489F;
+    --color-border: #e7e7e7;
 } 
 
 .h1, h1 {
@@ -33,6 +34,8 @@
     padding: 10px 20px;
     background-color: var(--color-primary);
     color: var(--color-highlight);
+    border-right-color: var(--color-border);
+    border-right: 1px solid var(--color-border);
 }
 
 .sidenav-title {
