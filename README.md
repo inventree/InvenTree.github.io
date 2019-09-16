@@ -5,16 +5,14 @@ To serve this documentation locally (e.g. for development), you will need to hav
 
 ## Setup
 
-The following packages are required to host the documentation:
+Run the following commands from the top-level project directory:
 
-### Ruby
-
-`> apt-get install ruby`
-
-### Bundler
+*Note: sudo may be required for some steps*
 
 ```
+> apt-get install ruby
 > gem install bundler
+> gem update
 > bundle install
 ```
 
