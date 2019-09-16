@@ -1,6 +1,33 @@
+title: InvenTree Documentation
+emial: your-email@domain.com
+author: Oliver Walters
+description: >
+  InvenTree - Open Source Inventory Management
+
+baseurl: ""
+
+repo: "https://github.com/inventree/inventree"
+github_user: "inventree"
+github_repo: "inventree"
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path
+
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: "_docs"
+      type: "docs"
     values:
-      layout: 'default'
+      layout: page
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "post"
+  - scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
