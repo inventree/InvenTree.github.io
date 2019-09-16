@@ -3,6 +3,14 @@ layout: null
 excluded_in_search: true
 ---
 
+:root {
+    --primary-color: #335d88;
+    --secondary-color: #b69c80;
+    --highlight-color: #f5efe8;
+    --basic-color: #333;
+}
+
+
 html {
     box-sizing: border-box;
 }
@@ -665,8 +673,8 @@ hr {
     left: 0;
     height: 4.8rem;
     transition: background-color .25s, color .25s;
-    background-color: #3f51b5;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
     box-shadow: none;
     z-index: 2;
     -webkit-backface-visibility: hidden;
