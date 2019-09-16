@@ -3,11 +3,13 @@ title: Stock
 layout: page
 --- 
 
-A *Stock Item* is an actual instance of a [*Part*](/part.html) item. It represents a physical quantity of the *Part* in a specific location.
-
-## Stock Location
+# Stock Location
 
 A stock locations represents a physical real-world location where *Stock Items* are stored. Locations are arranged in a cascading manner and each location may contain multiple sub-locations, or stock, or both.
+
+# Stock Item
+
+A *Stock Item* is an actual instance of a [*Part*](/part.html) item. It represents a physical quantity of the *Part* in a specific location.
 
 ## Stock Item Details
 

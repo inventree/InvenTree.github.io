@@ -12,6 +12,8 @@
       url: "docs/stock/stock"
     - title: Adjusting Stock
       url: "docs/stock/adjust"
+    - title: Stocktake
+      url: "docs/stock/stocktake"
 
 - title: Build
   children: 
