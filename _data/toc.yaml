@@ -3,16 +3,8 @@
   children:
     - title: Parts
       url: "docs/part/part"
-    - title: Part Details
-      url: "docs/part/detail"
-    - title: Orders
-      url: "docs/part/order"
-    - title: Suppliers
-      url: "docs/part/supplier"
-    - title: Stock
-      url: "docs/part/stock"
-    - title: Attachments
-      url: "docs/part/attachments"
+    - title: Part Views
+      url: "docs/part/views"
 
 - title: Stock
   children:
