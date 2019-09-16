@@ -9,14 +9,17 @@ The following packages are required to host the documentation:
 
 ### Ruby
 
-`apt-get install ruby`
+`> apt-get install ruby`
 
 ### Bundler
 
-`gem install bundler`
+```
+> gem install bundler
+> bundle install
+```
 
 ## Serve Locally
 
 To serve the pages locally, run the command (from the top-level project directory)
 
-`bundle exec jekyll serve` 
+`> bundle exec jekyll serve` 
