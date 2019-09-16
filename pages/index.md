@@ -6,7 +6,7 @@ permalink: "/"
 
 # InvenTree
 
-{% include img.html url="inventree.png" description="InvenTree" maxheight="250px" %}
+{% include img.html url="inventree.png" nolink="1" description="InvenTree" maxheight="250px" %}
 
 ## Intuitive Inventory Management 
 
