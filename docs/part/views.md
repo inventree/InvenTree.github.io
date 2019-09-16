@@ -1,6 +1,9 @@
 ---
-title: Part Detail
+title: Part Views
+layout: page
 ---
+
+# Details
 
 Each part has a comprehensive detail view which provides information about the particular part.
 
@@ -35,3 +38,51 @@ A Part can provide different functionality based on the following options.
 **Component** - If a part is designated as a *Component* it can be used as a sub-component of an *Assembly*.
 
 **Purchaseable** - If a part is designated as *Purchaseable* it can be purchased from external suppliers. Setting this flag allows parts to be added to purchase orders.
+
+# Parameters
+
+TODO
+
+# Stock
+
+The *Part Stock* tab shows all the stock items for the selected *Part*. The user can quickly determine how many parts are in stock, where they are located, and the status of each *Stock Item*.
+
+## Functions
+
+The following functions are available from the *Part Stock* view.
+
+### New Stock Item
+
+Launches a dialog to create a new *Stock Item* for the selected *Part*.
+
+# Allocations
+
+TODO
+
+# BOM
+
+TODO
+
+# Build
+
+TODO
+
+# Used In
+
+TODO
+
+# Suppliers
+
+The *Part Suppliers* tab displays all the *Supplier Parts* for the selected *Part*. 
+
+This tab is only visible if the *Part* is designated as *Purchaseable*.
+
+# Purchase Orders
+
+The *Part Purchase Orders* tab lists all the Purchase Orders against the selected part.
+
+This tab is only displayed if the part is marked as *Purchaseable*.
+
+# Attachments
+
+The *Part Attachments* tab displays file attachments associated with the selected *Part*. Multiple file attachements (such as datasheets) can be uploaded for each *Part*.

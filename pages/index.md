@@ -1,6 +1,13 @@
 ---
 title: InvenTree
+layout: page
+permalink: "/"
 ---
+
+# InvenTree
+
+{% include img.html url="inventree.png" description="InvenTree" maxheight="250px" %}
+
 ## Intuitive Inventory Management 
 
 InvenTree is an open-source inventory management system which provides intuitive parts management and stock control. 
@@ -11,7 +18,7 @@ InvenTree is designed to be lightweight and easy to use for SME or hobbyist appl
 
 Parts are the fundemental element of any inventory. InvenTree groups parts into structured categories which allow you to arrange parts to meet your particular needs. 
 
-[Read more...](/parts.html)
+[Read more...](/docs/part/part)
 
 ## Manage Suppliers
 

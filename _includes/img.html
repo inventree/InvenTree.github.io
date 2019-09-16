@@ -1,5 +1,10 @@
 <figure class='image'>
     <a href="/assets/img/{{ include.url }}">
-        <img class='img-inline' src='/assets/img/{{ include.url }}' alt='{{ include.description }}' title='{{ include.description }}'>
+        <img class='img-inline' src='/assets/img/{{ include.url }}' alt='{{ include.description }}' title='{{ include.description }}'
+        {% if include.maxwidth or include.maxheight %}style='
+        {% if include.maxwidth %} max-width:{{ include.maxwidth }};{% endif %}
+        {% if include.maxheight %} max-height: {{ include.maxheight }};{% endif %}
+        '{% endif %}
+        >
     </a>
 </figure>
