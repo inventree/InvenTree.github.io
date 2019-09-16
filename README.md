@@ -10,9 +10,9 @@ Run the following commands from the top-level project directory:
 *Note: sudo may be required for some steps*
 
 ```
-> apt-get install ruby
+> apt-get install ruby2.5 ruby2.5-dev
+> gem install jekyll
 > gem install bundler
-> gem update
 > bundle install
 ```
 
@@ -21,3 +21,7 @@ Run the following commands from the top-level project directory:
 To serve the pages locally, run the command (from the top-level project directory)
 
 `> bundle exec jekyll serve` 
+
+## Edit Documentation Files
+
+Once the server is running, it will monitor the documentation files for any changes, and update the served pages.
