@@ -1,5 +1,6 @@
 # InvenTree.github.io
-GitHub pages for InvenTree
+
+This repository hosts the user documentation for [InvenTree](https://github.com/inventree/inventree), an open source inventory management system. 
 
 To serve this documentation locally (e.g. for development), you will need to have ruby installed on your system.
 
@@ -25,3 +26,7 @@ To serve the pages locally, run the command (from the top-level project director
 ## Edit Documentation Files
 
 Once the server is running, it will monitor the documentation files for any changes, and update the served pages.
+
+## Credits
+
+This documentation makes use of the [mkdocs-jekyll template](https://github.com/vsoch/mkdocs-jekyll)
