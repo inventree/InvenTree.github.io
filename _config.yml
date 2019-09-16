@@ -1,14 +1,14 @@
 title: InvenTree Documentation
 emial: your-email@domain.com
-author: Oliver Walters
+author: InvenTree
 description: >
   InvenTree - Open Source Inventory Management
 
 baseurl: ""
 
-repo: "https://github.com/inventree/inventree"
+repo: "https://github.com/inventree/inventree.github.io"
 github_user: "inventree"
-github_repo: "inventree"
+github_repo: "inventree.github.io"
 
 collections:
   docs:

@@ -1,0 +1,61 @@
+
+- title: "Parts"
+  children:
+    - title: Parts
+      url: "docs/part/part"
+    - title: Part Details
+      url: "docs/part/detail"
+    - title: Orders
+      url: "docs/part/order"
+    - title: Suppliers
+      url: "docs/part/supplier"
+    - title: Stock
+      url: "docs/part/stock"
+    - title: Attachments
+      url: "docs/part/attachments"
+
+- title: Stock
+  children:
+    - title: Stock Items
+      url: "docs/stock/stock"
+    - title: Adjusting Stock
+      url: "docs/stock/adjust"
+
+- title: Build
+  children: 
+    - title: Build Parts
+      url: "docs/build/build"
+    - title: "BOM"
+      url: "docs/build/bom"
+
+- title: Buy
+  children:
+    - title: Suppliers
+      url: "docs/buy/supplier"
+    - title: Purchase Orders
+      url: "docs/buy/po"
+
+- title: Admin
+  children:
+    - title: Admin Interface
+      url: "docs/admin/admin"
+    - title: Export Data
+      url: "docs/admin/export"
+    - title: Import Data
+      url: "docs/admin/import"
+
+- title: Extend
+  children:
+    - title: API
+      url: "docs/extend/api"
+    - title: Python Library
+      url: "docs/extend/python"
+    - title: Integrations
+      url: "docs/extend/integrate"
+
+- title: About
+  children:
+    - title: Installation
+      url: "docs/tech/install"
+    - title: Contributing
+      url: "docs/tech/contribute"

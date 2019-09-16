@@ -1,5 +1,6 @@
 ---
 title: Part Purchase Orders
+laout: page
 ---
 
 The *Part Purchase Orders* tab lists all the Purchase Orders against the selected part.

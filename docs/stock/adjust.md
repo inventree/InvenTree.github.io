@@ -1,5 +1,6 @@
 ---
 title: Stock Adjustments
+layout: page
 ---
 
 InvenTree provides simple yet powerful management of stock levels. Multiple stock adjustment options are available, and each type of adjustment is automatically tracked to maintain a complete stock history.

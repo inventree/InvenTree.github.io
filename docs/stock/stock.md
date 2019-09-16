@@ -1,5 +1,6 @@
 ---
 title: Stock
+layout: page
 --- 
 
 A *Stock Item* is an actual instance of a [*Part*](/part.html) item. It represents a physical quantity of the *Part* in a specific location.

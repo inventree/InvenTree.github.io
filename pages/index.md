@@ -1,5 +1,7 @@
 ---
 title: InvenTree
+layout: page
+permalink: "/"
 ---
 ## Intuitive Inventory Management 
 
@@ -11,7 +13,7 @@ InvenTree is designed to be lightweight and easy to use for SME or hobbyist appl
 
 Parts are the fundemental element of any inventory. InvenTree groups parts into structured categories which allow you to arrange parts to meet your particular needs. 
 
-[Read more...](/parts.html)
+[Read more...](/docs/part/part)
 
 ## Manage Suppliers
 

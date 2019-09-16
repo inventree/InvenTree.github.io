@@ -1,5 +1,6 @@
 ---
 title: Part Detail
+layout: page
 ---
 
 Each part has a comprehensive detail view which provides information about the particular part.

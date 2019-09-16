@@ -1,5 +1,6 @@
 ---
 title: Parts
+layout: page
 ---
 
 The *Part* is the core element of the InvenTree ecosystem. A Part object is the archetype of any stock item in your inventory. Parts are arranged in heirarchical categories which are used to organise and filter parts by function.
@@ -19,5 +20,5 @@ The category part list provides an overview of each part:
 * Part category
 * Part stock level
 
-Clicking on the part name links to the [*Part Detail*](/part_detail.html) view.
+Clicking on the part name links to the [*Part Detail*](/docs/parts/detail) view.
 
