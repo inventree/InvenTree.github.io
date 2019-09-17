@@ -1,10 +1,16 @@
 <figure class='image'>
+    {% if include.nolink %}
+    {% else %}
     <a href="/assets/img/{{ include.url }}">
+    {% endif %}
         <img class='img-inline' src='/assets/img/{{ include.url }}' alt='{{ include.description }}' title='{{ include.description }}'
         {% if include.maxwidth or include.maxheight %}style='
         {% if include.maxwidth %} max-width:{{ include.maxwidth }};{% endif %}
         {% if include.maxheight %} max-height: {{ include.maxheight }};{% endif %}
         '{% endif %}
         >
+    {% if include.nolink %}
+    {% else %}
     </a>
+    {% endif %}
 </figure>
