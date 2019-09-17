@@ -24,28 +24,28 @@ Parts are the fundemental element of any inventory. InvenTree groups parts into 
 
 Link parts to multiple suppliers, 
 
-[Read more...](/suppliers.html)
+[Read more...](/docs/buy/supplier)
 
 ## Instant Stock Knowledge
 
 Instantly view current stock for a certain part, in a particular location, or required for an individual build. Stock items are organized in cascading locations and sub-locations, allowing flexible inspection of stock under any location.
 
-[Read more...](/stock.html)
+[Read more...](/docs/stock/stock)
 
 ## BOM Management
 
 Intelligent BOM (Bill of Material) management provides a clear understanding of the sub-parts required to make a new part. 
 
-[Read more...](/bom.html)
+[Read more...](/docs/build/bom)
 
 ## Build Parts
 
 Consume stock items to make new parts
 
-[Read more...](/build.html)
+[Read more...](/docs/build/build)
 
 ## Extend and Customize
 
 If the core InvenTree functionality does not meet your particular need, extensibility is available through an external API. Write external programs to interact with the InvenTree database.
 
-[Read more...](/extend.html)
+[Read more...](/docs/extend/api)

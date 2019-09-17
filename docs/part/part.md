@@ -22,5 +22,5 @@ The category part list provides an overview of each part:
 * Part category
 * Part stock level
 
-Clicking on the part name links to the [*Part Detail*](/docs/parts/detail) view.
+Clicking on the part name links to the [*Part Detail*](/docs/part/views) view.
 

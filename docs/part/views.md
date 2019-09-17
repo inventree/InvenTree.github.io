@@ -3,9 +3,11 @@ title: Part Views
 layout: page
 ---
 
-# Details
+The Part information page organizes part data into sections, displayed as tabs
 
-Each part has a comprehensive detail view which provides information about the particular part.
+# Part Details
+
+The *Details* tab shows a detail view which provides information about the particular part.
 
 {% include img.html url="part/part_overview.png" description="Part details" %}
 
@@ -43,25 +45,39 @@ A Part can provide different functionality based on the following options.
 
 TODO
 
+# Variants
+
+TODO
+
 # Stock
 
-The *Part Stock* tab shows all the stock items for the selected *Part*. The user can quickly determine how many parts are in stock, where they are located, and the status of each *Stock Item*.
+The *Stock* tab shows all the stock items for the selected *Part*. The user can quickly determine how many parts are in stock, where they are located, and the status of each *Stock Item*.
+
+{% include img.html url="part/part_stock.png" description="Part Stock" %}
 
 ## Functions
 
 The following functions are available from the *Part Stock* view.
 
+### Export
+
+Exports the stocktake data for the selected Part. Launches a dialog to select export options, and then downloads a file containing data for all stock items for this Part.
+
 ### New Stock Item
 
 Launches a dialog to create a new *Stock Item* for the selected *Part*.
 
+### Stock Actions
+
+If stock items are selected in the table, stock actions are enabled via the drop-down menu.
+
 # Allocations
 
-TODO
+The *Allocated* tab displays how many units of this part have been allocated to pending builds. This tab is only visible if the Part is a *component* (meaning it can be used to make assemblies).
 
 # BOM
 
-TODO
+The *BOM* tab displays the Bill of Materials - a list of sub-components used to build an assembly. Each row in the BOM specifies a quantity of another Part which is required to build the assembly. This tab is only visible if the Part is an *assembly* (meaning it can be build from other parts).
 
 # Build
 
@@ -69,13 +85,15 @@ TODO
 
 # Used In
 
-TODO
+The *Used In* tab displays a list of other parts that this part is used to make. This tab is only visible if the Part is a *component*.
 
 # Suppliers
 
 The *Part Suppliers* tab displays all the *Supplier Parts* for the selected *Part*. 
 
 This tab is only visible if the *Part* is designated as *Purchaseable*.
+
+{% include img.html url="part/part_suppliers.png" description="Part Suppliers" %}
 
 # Purchase Orders
 
