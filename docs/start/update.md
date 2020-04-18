@@ -7,6 +7,8 @@ layout: page
 
 Administrators wishing to update InvenTree to the latest version should follow the instructions below. The commands listed below should be run from the InvenTree root directory.
 
+{% include alert.html title="Update Database" content="It is advisable to backup the InvenTree database before performing these steps. The particular backup procedure may depend on your installation details." %}
+
 ## Stop InvenTree Server
 
 Ensure the InvenTree server is stopped.

@@ -9,6 +9,8 @@ To install a complete *development* environment for InvenTree, follow the steps 
 
 A makefile in the root directory provides shortcuts for the installation process, and can also be very useful during development.
 
+{% include alert.html title="Windows" content="If you are using the Windows operating system, it is reccomended that you use the <a href='https://docs.microsoft.com/en-us/windows/wsl/install-win10'>WSL framework</a>" %}
+
 ## Requirements
 
 To install InvenTree you will need the following system components installed:
@@ -39,10 +41,9 @@ To configure Inventree inside a virtual environment, ``cd`` into the inventree b
 
 This will place the current shell session inside a virtual environment - the terminal should display the ``(inventree-env)`` prefix.
 
-**Note:** *Remember to run ``source inventree-env/bin/activate`` when starting each shell session, before running Inventree commands. This will ensure that the correct environment is being used.*
+{% include alert.html title="Activate virtual environment" content="Remember to activate the virtual environment when starting each shell session, before running Inventree commands. This will ensure that the correct environment is being used." %}
 
 ## Installation
-
 
 First, download the latest InvenTree source code:
 
@@ -58,7 +59,7 @@ which installs all required Python packages using pip package manager. It also c
 
 Additionally, this step creates a *SECRET_KEY* file which is used for the django authentication framework. 
 
-**Note:** *The `SECRET_KEY` file should never be shared or made public.* 
+{% include alert.html title="Keep it secret, keep it safe" content="The SECRET_KEY file should never be shared or made public." %}
 
 ## Database Configuration
 
@@ -90,7 +91,7 @@ The InvenTree database is now setup and ready to run. A simple development serve
 
 Run `cd InvenTree && python3 manage.py runserver 127.0.0.1:8000` to launch a development server. This will launch the InvenTree web interface at `http://127.0.0.1:8000`. For other options refer to the [django docs](https://docs.djangoproject.com/en/2.2/ref/django-admin/)
 
-For a production install, refer to the TODO LINK HERE
+For a production install, refer to [deployment instructions](/docs/start/deploy).
 
 ## Development and Testing
 
