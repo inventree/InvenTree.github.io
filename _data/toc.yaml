@@ -1,4 +1,17 @@
 
+- title: "Getting Starting"
+  children:
+    - title: Installation
+      url: "docs/start/install"
+    - title: Configuration
+      url: "docs/start/config"
+    - title: Deploying
+      url: "docs/start/deploy"
+    - title: Updating
+      url: "docs/start/update"
+    - title: Migrating
+      url: "docs/start/migrate"
+
 - title: "Parts"
   children:
     - title: Parts
@@ -42,14 +55,12 @@
   children:
     - title: API
       url: "docs/extend/api"
-    - title: Python Library
+    - title: Python Interface
       url: "docs/extend/python"
-    - title: Integrations
+    - title: Plugins
+      url: "docs/extend/plugins"
+    - title: Third Party
       url: "docs/extend/integrate"
 
-- title: About
-  children:
-    - title: Installation
-      url: "docs/tech/install"
-    - title: Contributing
-      url: "docs/tech/contribute"
+- title: Contribute
+  url: "pages/contribute"

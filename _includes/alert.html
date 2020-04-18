@@ -1,4 +1,4 @@
-<div class="admonition {{ include.type }}">
+<div class="admonition {% if include.type %}{{ include.type }}{% else %}info{% endif %}">
 <p class="admonition-title">{% if include.title %}{{ include.title }}{% else %}{{ include.type }}{% endif %}</p>
 <p>{{ include.content }}</p>
 </div>
