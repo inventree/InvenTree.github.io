@@ -47,9 +47,5 @@
     - title: Integrations
       url: "docs/extend/integrate"
 
-- title: About
-  children:
-    - title: Installation
-      url: "docs/tech/install"
-    - title: Contributing
-      url: "docs/tech/contribute"
+- title: Contribute
+  url: "pages/contribute"
