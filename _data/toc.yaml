@@ -42,7 +42,7 @@
   children:
     - title: API
       url: "docs/extend/api"
-    - title: Python Library
+    - title: Python Interface
       url: "docs/extend/python"
     - title: Plugins
       url: "docs/extend/plugins"
