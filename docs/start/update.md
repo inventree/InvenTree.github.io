@@ -4,3 +4,32 @@ layout: page
 ---
 
 # Update InvenTree
+
+Administrators wishing to update InvenTree to the latest version should follow the instructions below. The commands listed below should be run from the InvenTree root directory.
+
+## Stop InvenTree Server
+
+Ensure the InvenTree server is stopped.
+
+## Update Source Code
+
+Update the InvenTree source code to the latest version (or a particular commit if required).
+
+`git pull origin master`
+
+## Perform Database Migrations
+
+Updating the database is as simple as calling the makefile target:
+
+``make update``
+
+This command performs the following steps:
+
+* Ensure all rquired packages are installed and up to date
+* Perform required database schema changes
+* Run the user through any steps which require interaction
+* Collect any new or updated static files
+
+## Restart Server
+
+Ensure the InvenTree server is restarted.
