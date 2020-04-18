@@ -4,11 +4,7 @@ layout: page
 permalink: "/"
 ---
 
-# InvenTree
-
-{% include img.html url="inventree.png" nolink="1" description="InvenTree" maxheight="250px" %}
-
-## Intuitive Inventory Management 
+# InvenTree - Intuitive Inventory Management 
 
 InvenTree is an open-source inventory management system which provides intuitive parts management and stock control. 
 

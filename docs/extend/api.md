@@ -15,7 +15,11 @@ The API is self-documenting, and the documentation is provided alongside any Inv
 
 ## Authentication
 
-The API uses token-based authentication for fast data access. To obtain a valid token, perform a GET request to `/api/user/token/` (no data are required). *Ensure that a valid username:password combination are supplied as basic authorization headers.* If the supplied user credentials are validated, the server will respond with:
+The API uses token-based authentication for fast data access. To obtain a valid token, perform a GET request to `/api/user/token/` (no data are required).
+
+{% include alert.html title="Credentials" content="Ensure that a valid username:password combination are supplied as basic authorization headers." %}
+
+If the supplied user credentials are validated, the server will respond with:
 
 ```
 HTTP_200_OK
