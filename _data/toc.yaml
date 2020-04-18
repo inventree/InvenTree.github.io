@@ -44,7 +44,9 @@
       url: "docs/extend/api"
     - title: Python Library
       url: "docs/extend/python"
-    - title: Integrations
+    - title: Plugins
+      url: "docs/extend/plugins"
+    - title: Third Party
       url: "docs/extend/integrate"
 
 - title: Contribute
