@@ -9,6 +9,8 @@
       url: "docs/start/deploy"
     - title: Updating
       url: "docs/start/update"
+    - title: Migrating
+      url: "docs/start/migrate"
 
 - title: "Parts"
   children:
