@@ -1,4 +1,15 @@
 
+- title: "Getting Starting"
+  children:
+    - title: Installation
+      url: "docs/start/install"
+    - title: Configuration
+      url: "docs/start/config"
+    - title: Deploying
+      url: "docs/start/deploy"
+    - title: Updating
+      url: "docs/start/update"
+
 - title: "Parts"
   children:
     - title: Parts
