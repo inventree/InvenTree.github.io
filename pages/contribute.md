@@ -21,7 +21,9 @@ If you find a bug or a feature that does not work correctly, please report it on
 
 ## Translation
 
-InvenTree provides a translation layer for the web interface, this requires effort from translators to provide multi-lingual support. If you wish to translate InvenTree to a new language (or improve an existing translation), such contributions would be extremely useful. Once again, to provide translation improvements, refer to [GitHub](https://github.com/inventree/inventree).
+InvenTree provides a translation layer for the web interface, this requires effort from translators to provide multi-lingual support. If you wish to translate InvenTree to a new language (or improve an existing translation), such contributions would be extremely useful. To provide translation improvements, refer to [GitHub](https://github.com/inventree/inventree).
+
+{% include alert.html title="Translation Helper Script" content="A python script is provided to assist with translation. This script is located at InvenTree/script/translate.py" %}
 
 ## Documentation
 
