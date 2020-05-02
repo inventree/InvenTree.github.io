@@ -96,3 +96,7 @@ By default, uploaded media files are stored in the local directory `./inventree_
 ## Backup Location
 
 The default behaviour of the database backup is to generate backup files for database tables and media files to the user's temporary directory. The target directory can be overridden by setting the *backup_dir* parameter in the config file.
+
+## Sentry.io Integration
+
+InvenTree supports [sentry.io](https://sentry.io) integration using the native django/sentry bindings. If you have a sentry.io account, create a new dsn and provide this in the `config.yaml` file.
