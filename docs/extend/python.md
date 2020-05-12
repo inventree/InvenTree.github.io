@@ -3,15 +3,33 @@ title: Python Interface
 layout: page
 ---
 
-# Python Interface
+# Python Module
 
-A [Python interface](https://github.com/inventree/inventree-python) is provided for rapid development of third party scripts or applications using the REST API. The python module handles authentication and API transactions, providing an extremely clean interface for interacting with and manipulating database data.
+A [Python module](https://github.com/inventree/inventree-python) is provided for rapid development of third party scripts or applications using the REST API. The python module handles authentication and API transactions, providing an extremely clean interface for interacting with and manipulating database data.
 
-A simple example is provided below:
+## Features
+
+- Automatic authentication management using token-based authentication
+- Pythonic data access
+- Native file uploads
+- Powerful functions for accessing related model data
+
+## Installation
+
+The inventree python interface can be easily installed via the [PIP package manager](https://pypi.org/project/inventree/):
+
+```pip3 install inventree```
+
+Alternatively, it can downloaded and installed from source, from [GitHub](https://github.com/inventree/inventree-python).
+
+## Example
+
+The inventree Python module is designed to be very lightweight and simple to use. An example is provided below:
 
 ```python
-from inventree_api import InvenTreeAPI
-from inventree_object import Part, BomItem, SupplierPart
+from inventree.api import InvenTreeAPI
+from inventree.part import Part, BomItem
+from inventree.company import SupplierPart
 
 MY_USERNAME = 'not_my_real_username'
 MY_PASSWORD = 'not_my_real_password'
