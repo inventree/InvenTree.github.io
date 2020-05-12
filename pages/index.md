@@ -42,6 +42,6 @@ Consume stock items to make new parts
 
 ## Extend and Customize
 
-If the core InvenTree functionality does not meet your particular need, extensibility is available through an external API. Write external programs to interact with the InvenTree database.
+InvenTree is designed to be highly extensible. If the core InvenTree functionality does not meet your particular need, InvenTree provides a RESTful API, a native Python library, and a powerful plugin system.
 
 [Read more...](/docs/extend/api)
