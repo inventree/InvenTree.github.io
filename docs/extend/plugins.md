@@ -13,6 +13,12 @@ Plugins are discovered and loaded when the server is started.
 
 Multiple plugins are supported:
 
+## Reporting Plugins
+
+InvenTree can generate customized reports (for example stocktake information, packing lists, acceptance test reports, etc). The reporting interface is extremely versatile, allowing the generation of reports in multiple formats (PDF / LaTeX / etc).
+
+{% include alert.html title="TODO" content="Include more information here on reporting plugins" %}
+
 ## Barcode Plugins
 
 InvenTree supports decoding of arbitrary barcode data via a **Barcode Plugin** interface. Barcode data POSTed to the `/api/barcode/` endpoint will be supplied to all loaded barcode plugins, and the first plugin to successfully interpret the barcode data will return a response to the client.

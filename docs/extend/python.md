@@ -18,39 +18,68 @@ A [Python module](https://github.com/inventree/inventree-python) is provided for
 
 The inventree python interface can be easily installed via the [PIP package manager](https://pypi.org/project/inventree/):
 
-```pip3 install inventree```
+```
+pip3 install inventree
+```
 
 Alternatively, it can downloaded and installed from source, from [GitHub](https://github.com/inventree/inventree-python).
 
-## Example
+## Examples
 
-The inventree Python module is designed to be very lightweight and simple to use. An example is provided below:
+The inventree Python module is designed to be very lightweight and simple to use. Some simple examples are provided below:
+
+### Authentication
+
+Authentication against an InvenTree server is simple:
 
 ```python
 from inventree.api import InvenTreeAPI
-from inventree.part import Part, BomItem
-from inventree.company import SupplierPart
 
+SERVER_ADDRESS = 'http://127.0.0.1:8000'
 MY_USERNAME = 'not_my_real_username'
 MY_PASSWORD = 'not_my_real_password'
 
-api = InvenTreeAPI('http://127.0.0.1:8000/api/', username=MY_USERNAME, password=MY_PASSWORD)
+api = InvenTreeAPI(SERVER_ADDRESS, username=MY_USERNAME, password=MY_PASSWORD)
+```
 
-# Access a single part, and get its BOM items directly
-part = Part(api, pk=10)
-bom_items = part.get_bom_items()
+Alternatively, if you already have an access token:
 
-# Alternatively, BOM items can be requested directly from the database
-bom_items = BomItem.list(api, part=10)
+```python
+api = InvenTreeAPI(SERVER_ADDRESS, token=MY_TOKEN)
+```
 
-# Each request is returned as a class object which can be queried further
-# Extract all pricing information available for each supplier part for each BOM Item
-for item in bom_items:
-    supplier_part = SupplierPart.list(api, part=item['sub_part'])
+### Retrieving Individual Items
 
-    for part in supplier_parts:
-        price_breaks = part.get_price_breaks()
-        
-        for pb in price_break:
-            print(' - ${price} @ {q}'.format(price=pb['cost'], q=pb['quantity']))
+If the primary-key of an object is already known, retrieving it from the database is performed as follows:
+
+```python
+from inventree.part import PartCategory
+
+category = PartCatgory(api, 10)
+```
+
+### Querying / Listing Items
+
+Database items can be queried by using the `list` method for the given class:
+
+```python
+from inventree.part import Part
+from inventree.stock import StockItem
+
+parts = Part.list(api, category=10, assembly=True)
+items = StockItem.list(api, location=4, part=24)
+```
+
+Once an object has been retrieved from the database, its related objects can be returned with helper functions:
+
+```python
+part = Part(api, 25)
+stock_items = part.getStockItems()
+```
+
+Some classes also have helper functions for performing certain actions, such as uploading file attachments or test results:
+
+```python
+stock_item = StockItem(api, 1001)
+stock_item.uploadTestResult("Firmware", True, value="0x12345678", attachment="device_firmware.bin")
 ```
