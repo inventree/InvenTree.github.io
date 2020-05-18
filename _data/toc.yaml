@@ -18,6 +18,8 @@
       url: "docs/part/part"
     - title: Part Views
       url: "docs/part/views"
+    - title: Test Templates
+      url: "docs/part/test"
 
 - title: Stock
   children:
@@ -27,6 +29,8 @@
       url: "docs/stock/adjust"
     - title: Stocktake
       url: "docs/stock/stocktake"
+    - title: Test Results
+      url: "docs/stock/test"
 
 - title: Build
   children: 
