@@ -18,7 +18,9 @@ A [Python module](https://github.com/inventree/inventree-python) is provided for
 
 The inventree python interface can be easily installed via the [PIP package manager](https://pypi.org/project/inventree/):
 
-```pip3 install inventree```
+```
+pip3 install inventree
+```
 
 Alternatively, it can downloaded and installed from source, from [GitHub](https://github.com/inventree/inventree-python).
 

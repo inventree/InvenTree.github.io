@@ -27,17 +27,19 @@ Each of these programs need to be installed (e.g. using apt or similar) before r
 sudo apt-get install python3 python3-dev python3-pip g++ make
 ```
 
+{% include alert.html title="Note" content="Take care not to run the makefile itself under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
+
 ## Virtual Environment
 
 Installing the required Python packages inside a virtual environment allows a local install separate to the system-wide Python installation. While not strictly necessary, using a virtual environment is highly recommended as it prevents conflicts between the different Python installations.
 
 To configure Inventree inside a virtual environment, ``cd`` into the inventree base directory and run the following commands:
 
-``apt-get install python3-venv``
-
-``python3 -m venv inventree-env``
-
-``source inventree-env/bin/activate``
+```
+apt-get install python3-venv
+python3 -m venv inventree-env
+source inventree-env/bin/activate
+```
 
 This will place the current shell session inside a virtual environment - the terminal should display the ``(inventree-env)`` prefix.
 
@@ -47,15 +49,20 @@ This will place the current shell session inside a virtual environment - the ter
 
 First, download the latest InvenTree source code:
 
-``git clone https://github.com/inventree/inventree/``
+```
+git clone https://github.com/inventree/inventree/
+```
 
 InvenTree is a Python/Django application and relies on the pip package manager. All packages required to develop and test InvenTree can be installed via pip. Package requirements can be found in ``requirements.txt``.
 
-To setup the InvenTree environment, *cd into the inventree directory* and run the command:
+To setup the InvenTree environment, run the following commands:
 
-``make install``
+```
+cd inventree
+make install
+```
 
-which installs all required Python packages using pip package manager. It also creates a (default) database configuration file which needs to be edited to meet user needs before proceeding (see next step below).
+This installs all required Python packages using pip package manager. It also creates a (default) database configuration file which needs to be edited to meet user needs before proceeding (see next step below).
 
 Additionally, this step creates a *SECRET_KEY* file which is used for the django authentication framework. 
 
@@ -65,7 +72,7 @@ Additionally, this step creates a *SECRET_KEY* file which is used for the django
 
 Once the required packages are installed, the database configuration must be adjusted to suit your particular needs. InvenTree provides a simple default setup which should work *out of the box* for testing and debug purposes.
 
-As part of the previous *install* step, a configuration file (``config.yaml``) is created. The configuration file provides administrators control over various setup options without digging into the Django *settings.py* script. The default setup uses a local sqlite database with *DEBUG* mode enabled.
+As part of the previous *install* step, a configuration file (**config.yaml**) is created. The configuration file provides administrators control over various setup options without digging into the Django *settings.py* script. The default setup uses a local sqlite database with *DEBUG* mode enabled.
 
 For further information on installation configuration, refer to the [Configuration](/docs/start/config) section.
 
@@ -73,7 +80,9 @@ For further information on installation configuration, refer to the [Configurati
 
 Once install settings are correctly configured (in *config.yaml*) run the initial setup script:
 
-``make migrate``
+```
+make migrate
+```
 
 This performs the initial database migrations, creating the required tables, etc.
 
@@ -83,13 +92,22 @@ The database should now be installed!
 
 Create an initial superuser (administrator) account for the InvenTree instance:
 
-``make superuser``
+```bash
+make superuser
+```
 
 ## Run Development Server
 
-The InvenTree database is now setup and ready to run. A simple development server can be launched from the command line.
+The InvenTree database is now setup and ready to run. A simple development server can be launched from the command line. 
 
-Run `cd InvenTree && python3 manage.py runserver 127.0.0.1:8000` to launch a development server. This will launch the InvenTree web interface at `http://127.0.0.1:8000`. For other options refer to the [django docs](https://docs.djangoproject.com/en/2.2/ref/django-admin/)
+To launch the development server, run the following commands:
+
+```
+cd InvenTree
+python manage.py runserver 127.0.0.1:8000
+```
+
+This will launch the InvenTree web interface at `http://127.0.0.1:8000`. For other options refer to the [django docs](https://docs.djangoproject.com/en/2.2/ref/django-admin/)
 
 For a production install, refer to [deployment instructions](/docs/start/deploy).
 

@@ -13,13 +13,15 @@ There are also numerous online tutorials describing how to deploy a Django appli
 
 # Gunicorn
 
-Following is a simple tutorial on serving InvenTree using [Gunicorn](https://gunicorn.org/). Gunicorn is a Python WSGI server which provides a multi-worker server which is much better suited to handling multiple simultaneous requests. 
+Following is a simple tutorial on serving InvenTree using [Gunicorn](https://gunicorn.org/). Gunicorn is a Python WSGI server which provides a multi-worker server which is well suited to handling multiple simultaneous requests. Gunicorn is a solid choice for a production server which is easy to configure and performs well in a multi-user environment.
 
 ## Install Gunicorn
 
 Gunicorn can be installed using PIP:
 
-``pip3 install gunicorn``
+```
+pip3 install gunicorn
+```
 
 ## Configure Static Directories
 
@@ -29,7 +31,9 @@ Directories for storing *media* files and *static* files should be specified in 
 
 The required static files must be collected into the specified ``STATIC_ROOT`` directory:
 
-`make static`
+```
+make static
+```
 
 This command collects all of the required static files (including script and css files) into the specified directory ready to be served.
 
@@ -45,4 +49,7 @@ This file can be used to configure the Gunicorn server to match particular requi
 
 ## Run Gunicorn
 
-Run ``cd InvenTree && gunicorn -c gunicorn.conf.py InvenTree.wsgi``
+```
+cd InvenTree
+gunicorn -c gunicorn.conf.py InvenTree.wsgi
+```

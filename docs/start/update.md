@@ -11,19 +11,23 @@ Administrators wishing to update InvenTree to the latest version should follow t
 
 ## Stop InvenTree Server
 
-Ensure the InvenTree server is stopped.
+Ensure the InvenTree server is stopped. This will depend on the particulars of your database installation.
 
 ## Update Source Code
 
 Update the InvenTree source code to the latest version (or a particular commit if required).
 
-`git pull origin master`
+```
+git pull origin master
+```
 
 ## Perform Database Migrations
 
 Updating the database is as simple as calling the makefile target:
 
-``make update``
+```
+make update
+```
 
 This command performs the following steps:
 
@@ -34,4 +38,4 @@ This command performs the following steps:
 
 ## Restart Server
 
-Ensure the InvenTree server is restarted.
+Ensure the InvenTree server is restarted. This will depend on the particulars of your database installation.
