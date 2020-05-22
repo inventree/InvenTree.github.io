@@ -40,6 +40,10 @@ Consume stock items to make new parts
 
 [Read more...](/docs/build/build)
 
+## Report
+
+Generate a wide range of reports using custom templates. [Read more...](docs/report/report)
+
 ## Extend and Customize
 
 InvenTree is designed to be highly extensible. If the core InvenTree functionality does not meet your particular need, InvenTree provides a RESTful API, a native Python library, and a powerful plugin system.

@@ -46,6 +46,18 @@
     - title: Purchase Orders
       url: "docs/buy/po"
 
+- title: Report
+  url: "docs/report/report"
+  children:
+    - title: Templates
+      url: "docs/report/report"
+    - title: Test Report
+      url: "docs/report/test"
+    - title: Packing List
+      url: "docs/report/pack"
+    - title: Order
+      url: "docs/report/order"
+
 - title: Admin
   children:
     - title: Admin Interface
