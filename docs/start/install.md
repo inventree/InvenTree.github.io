@@ -20,14 +20,18 @@ To install InvenTree you will need the following system components installed:
 * python3-pip (pip3)
 * g++
 * make
+* libpango-1.0-0
+* libpangocairo-1.0-0
 
 Each of these programs need to be installed (e.g. using apt or similar) before running the ``make install`` script:
 
 ```
-sudo apt-get install python3 python3-dev python3-pip g++ make
+sudo apt-get install python3 python3-dev python3-pip g++ make libpango-1.0-0 libpangocairo-1.0-0
 ```
 
 {% include alert.html title="Note" content="Take care not to run the makefile itself under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
+
+{% include alert.html title="LaTeX Support" content="If you are intending to use InvenTree's LaTeX reporting capabilities, ensure that a valid LaTeX toolchain is configured on the system which is running the InvenTree installation." %}
 
 ## Virtual Environment
 
