@@ -18,7 +18,11 @@
       url: "docs/part/part"
     - title: Part Views
       url: "docs/part/views"
-    - title: Test Templates
+    - title: Parameters
+      url: "docs/part/parameter"
+    - title: Template Parts
+      url: "docs/part/template"
+    - title: Tests
       url: "docs/part/test"
 
 - title: Stock
