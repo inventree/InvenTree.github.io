@@ -5,7 +5,7 @@ layout: page
 
 # Stock Location
 
-A stock locations represents a physical real-world location where *Stock Items* are stored. Locations are arranged in a cascading manner and each location may contain multiple sub-locations, or stock, or both.
+A stock location represents a physical real-world location where *Stock Items* are stored. Locations are arranged in a cascading manner and each location may contain multiple sub-locations, or stock, or both.
 
 # Stock Item
 

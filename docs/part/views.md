@@ -3,7 +3,7 @@ title: Part Views
 layout: page
 ---
 
-The Part information page organizes part data into sections, displayed as tabs
+The Part information page organizes part data into sections, displayed as tabs.
 
 # Part Details
 
@@ -15,7 +15,7 @@ A Part is defined in the system by the following parameters:
 
 ## Part Definition Fields
 
-**Name** - The Part name is a simple (unique) test label
+**Part Name** - The Part name is a simple (unique) text label
 
 **Description** - Longer form text field describing the Part
 
@@ -25,7 +25,7 @@ A Part is defined in the system by the following parameters:
 
 **Category** - The Part category is used to group or arrange parts, as per the particular requirements of the user. Categories are arranged in a 'tree' where each category may have multiple child categories.
 
-**URL** - An external URL field is provided to link to an external page. This could be useful the part has extra documentation located on an external server.
+**External Link** - An external URL field is provided to link to an external page. This could be useful the part has extra documentation located on an external server.
 
 **Units** - Units of measure (UoM) for this Part. The default is 'pcs'
 
@@ -33,21 +33,29 @@ A Part is defined in the system by the following parameters:
 
 A Part can provide different functionality based on the following options.
 
-**Virtual** - A *Virtual* part is one which does not physically exist but should still be tracked in the system. This could be a process step,  machine time, software license, etc.
+**Virtual** - A *Virtual* part is one which does not physically exist but should still be tracked in the system. This could be a process step, machine time, software license, etc.
 
-**Assembly** - If a part is designated as an *Assembly* it can be created (or built) from other component parts. As an example, a circuit board assembly is made using multiple electronic components, which are tracked in the system. An *Assembly* Part has a Bill of Materials (BOM) which lists all the required sub-components.
+**Template** - A *Template* part is one which can have *variants* which exist underneath it. [Read further information about template parts here](/docs/part/template).
 
-**Component** - If a part is designated as a *Component* it can be used as a sub-component of an *Assembly*.
+**Assembly** - If a part is designated as an *Assembly* it can be created (or built) from other component parts. As an example, a circuit board assembly is made using multiple electronic components, which are tracked in the system. An *Assembly* Part has a Bill of Materials (BOM) which lists all the required sub-components. [Read further information about BOM management here](/docs/build/bom).
 
-**Purchaseable** - If a part is designated as *Purchaseable* it can be purchased from external suppliers. Setting this flag allows parts to be added to purchase orders.
+**Component** - If a part is designated as a *Component* it can be used as a sub-component of an *Assembly*. [Read further information about BOM management here](/docs/build/bom)
+
+**Trackable** - If a part is designed as *trackable*, it can be tracked using unique serial numbers.
+
+**Purchaseable** - If a part is designated as *Purchaseable* it can be purchased from external suppliers. Setting this flag allows parts to be added to [purchase orders](/docs/buy/po).
+
+**Salable** - If a part is designated as *Salable* it can be sold to external customers. Setting this flag allows patrs to be added to sales orders.
+
+**Active** - By default, all parts are *Active*. Marking a part as inactive means it is not available for many actions, but the part remains in the database. If a part becomes obsolete, it is recommended that it is marked as inactive, rather than deleting it from the database.
 
 # Parameters
 
-TODO
+Parts can have multiple defined [parameters](/docs/part/parameter).
 
 # Variants
 
-TODO
+If a part is a *Template Part* then the *Variants* tab will be visible. [Part templates](/docs/part/template)
 
 # Stock
 
@@ -73,15 +81,15 @@ If stock items are selected in the table, stock actions are enabled via the drop
 
 # Allocations
 
-The *Allocated* tab displays how many units of this part have been allocated to pending builds. This tab is only visible if the Part is a *component* (meaning it can be used to make assemblies).
+The *Allocated* tab displays how many units of this part have been allocated to pending build orders and/or sales orders. This tab is only visible if the Part is a *component* (meaning it can be used to make assemblies), or it is *salable* (meanint it can be sold to customers).
 
 # BOM
 
-The *BOM* tab displays the Bill of Materials - a list of sub-components used to build an assembly. Each row in the BOM specifies a quantity of another Part which is required to build the assembly. This tab is only visible if the Part is an *assembly* (meaning it can be build from other parts).
+The *BOM* tab displays the [Bill of Materials](/docs/build/bom) - a list of sub-components used to build an assembly. Each row in the BOM specifies a quantity of another Part which is required to build the assembly. This tab is only visible if the Part is an *assembly* (meaning it can be build from other parts).
 
-# Build
+# Build Orders
 
-TODO
+{% include alert.html title="TODO" content="Documentation to be written" %}
 
 # Used In
 
@@ -89,7 +97,7 @@ The *Used In* tab displays a list of other parts that this part is used to make.
 
 # Suppliers
 
-The *Part Suppliers* tab displays all the *Supplier Parts* for the selected *Part*. 
+The *Suppliers* tab displays all the *Supplier Parts* for the selected *Part*. 
 
 This tab is only visible if the *Part* is designated as *Purchaseable*.
 
@@ -101,6 +109,18 @@ The *Part Purchase Orders* tab lists all the Purchase Orders against the selecte
 
 This tab is only displayed if the part is marked as *Purchaseable*.
 
+# Sales Orders
+
+{% include alert.html title="TODO" content="Documentation to be written" %}
+
+# Tests
+
+If a part is marked as *trackable*, the user can define tests which must be performed on any stock items which are instances of this part. [Read more about testing](/docs/part/test).
+
 # Attachments
 
 The *Part Attachments* tab displays file attachments associated with the selected *Part*. Multiple file attachements (such as datasheets) can be uploaded for each *Part*.
+
+# Notes
+
+A part may have notes attached, which support markdown formatting.
