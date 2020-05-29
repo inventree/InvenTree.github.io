@@ -40,7 +40,7 @@ Installing the required Python packages inside a virtual environment allows a lo
 To configure Inventree inside a virtual environment, ``cd`` into the inventree base directory and run the following commands:
 
 ```
-apt-get install python3-venv
+sudo apt-get install python3-venv
 python3 -m venv inventree-env
 source inventree-env/bin/activate
 ```
