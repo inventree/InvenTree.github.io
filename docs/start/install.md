@@ -29,13 +29,33 @@ Each of these programs need to be installed (e.g. using apt or similar) before r
 sudo apt-get install python3 python3-dev python3-pip g++ make libpango-1.0-0 libpangocairo-1.0-0
 ```
 
-{% include alert.html title="Note" content="Take care not to run the makefile itself under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
+{% include alert.html title="sudo" content="apt-get commands will (most likely) be required to run under sudo. Take care not to run the makefile itself under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
 
 {% include alert.html title="LaTeX Support" content="If you are intending to use InvenTree's LaTeX reporting capabilities, ensure that a valid LaTeX toolchain is configured on the system which is running the InvenTree installation." %}
 
-## Virtual Environment
+## Download Source Code
+
+Download the InvenTree source code to a local directory. It is recommended to perform this step using git, as this allows the InvenTree installation to be easily updated to the latest version.
+
+```
+git clone https://github.com/inventree/inventree/
+```
+
+Alternatively, the source can be downloaded as a [.zip archive](https://github.com/inventree/InvenTree/archive/master.zip).
+
+Once the source is downloaded, cd into the source directory:
+
+```
+cd /path/to/inventree/
+```
+
+*(substitute /path/to/inventree/ with the directory where you have downloaded the source code)*.
+
+## Python Virtual Environment
 
 Installing the required Python packages inside a virtual environment allows a local install separate to the system-wide Python installation. While not strictly necessary, using a virtual environment is highly recommended as it prevents conflicts between the different Python installations.
+
+You can read more about Python virtual environments [here](https://docs.python.org/3/tutorial/venv.html).
 
 To configure Inventree inside a virtual environment, ``cd`` into the inventree base directory and run the following commands:
 
@@ -51,18 +71,11 @@ This will place the current shell session inside a virtual environment - the ter
 
 ## Installation
 
-First, download the latest InvenTree source code:
+Now that the source code is downloaded (and optionally you have configured a Python virtual environment), the Python packages required to run InvenTree can be installed. InvenTree is a Python/Django application and relies on the pip package manager. All packages required to develop and test InvenTree are installed via pip. Package requirements can be found in ``requirements.txt``.
+
+To setup the InvenTree environment, run the following commands (from the InvenTree source directory):
 
 ```
-git clone https://github.com/inventree/inventree/
-```
-
-InvenTree is a Python/Django application and relies on the pip package manager. All packages required to develop and test InvenTree can be installed via pip. Package requirements can be found in ``requirements.txt``.
-
-To setup the InvenTree environment, run the following commands:
-
-```
-cd inventree
 make install
 ```
 
@@ -96,7 +109,7 @@ The database should now be installed!
 
 Create an initial superuser (administrator) account for the InvenTree instance:
 
-```bash
+```
 make superuser
 ```
 
