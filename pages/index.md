@@ -10,6 +10,14 @@ InvenTree is an open-source inventory management system which provides intuitive
 
 InvenTree is designed to be lightweight and easy to use for SME or hobbyist applications, where many existing stock management solutions are bloated and cumbersome to use. However, powerful business logic works in the background to ensure that stock tracking history is maintained, and users have ready access to stock level information.
 
+## How it Works
+
+InvenTree is a [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/) application which stores data in a relational database, and serves this data to the user(s) via a web brower, and (optionally) can be integrated into custom applications via an API.
+
+InvenTree is designed to allow for a flexible installation. You could run the InvenTree server on Raspberry Pi SBC and have a simple single-user setup with a lightweight sqlite database. Or it can be run on the "cloud" using MySQL or PostgreSQL and support multiple simultaneous users.
+
+# Features
+
 ## Organize Parts
 
 Parts are the fundemental element of any inventory. InvenTree groups parts into structured categories which allow you to arrange parts to meet your particular needs. 
@@ -49,3 +57,7 @@ Generate a wide range of reports using custom templates. [Read more...](docs/rep
 InvenTree is designed to be highly extensible. If the core InvenTree functionality does not meet your particular need, InvenTree provides a RESTful API, a native Python library, and a powerful plugin system.
 
 [Read more...](/docs/extend/api)
+
+# Getting Started
+
+Refer to the [installation guide](/docs/start/install) for instructions on installing InvenTree. The server where InvenTree is to be installed will need to meet some basic package requirements, and a certain level of system administration understanding is assumed.
