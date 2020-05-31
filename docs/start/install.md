@@ -3,13 +3,33 @@ title: Install InvenTree
 layout: page
 ---
 
+# Introduction
+
+The InvenTree server application communicates with a backend database, and serves data to the user(s) via a web framework and an API. Before users can interact with the InvenTree system, the server must be installed and properly configured, and then the server process must be started (at a network location which is accessible to the users).
+
+## Supported Databases
+
+InvenTree can be used by any database backend which is supported by the [Django framework](https://docs.djangoproject.com/en/3.0/ref/databases/):
+
+* SQLite
+* PostgreSQL
+* MariaDB
+* MySQL
+* Oracle
+
+Database selection should be determined by your particular installation requirements. By default, InvenTree uses SQLite which provides a simple file-based database that allows a quick setup for development and testing.
+
+## Serving Data
+
+Once a database is setup, you need a way of accessing the data. InvenTree provides a "server" application out of the box, but this may not scale particularly well with multiple users. Instead, InvenTree can be served using a webserver such as [Gunicorn](https://gunicorn.org/). For more information see the [deployment documentation](/docs/start/deploy).
+
 # Installing InvenTree
 
 To install a complete *development* environment for InvenTree, follow the steps presented below. A production environment will require further work as per the particular application requirements. 
 
 A makefile in the root directory provides shortcuts for the installation process, and can also be very useful during development.
 
-{% include alert.html title="Windows" content="If you are using the Windows operating system, it is reccomended that you use the <a href='https://docs.microsoft.com/en-us/windows/wsl/install-win10'>WSL framework</a>" %}
+{% include alert.html title="Windows" content="If you are using the Windows operating system, it is reccomended that you use the <a href='https://docs.microsoft.com/en-us/windows/wsl/install-win10'>WSL (Windows Subsystem for Linux) framework</a>" %}
 
 ## Requirements
 
