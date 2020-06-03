@@ -45,7 +45,7 @@ A Part can provide different functionality based on the following options.
 
 **Purchaseable** - If a part is designated as *Purchaseable* it can be purchased from external suppliers. Setting this flag allows parts to be added to [purchase orders](/docs/buy/po).
 
-**Salable** - If a part is designated as *Salable* it can be sold to external customers. Setting this flag allows patrs to be added to sales orders.
+**Salable** - If a part is designated as *Salable* it can be sold to external customers. Setting this flag allows parts to be added to sales orders.
 
 **Active** - By default, all parts are *Active*. Marking a part as inactive means it is not available for many actions, but the part remains in the database. If a part becomes obsolete, it is recommended that it is marked as inactive, rather than deleting it from the database.
 
