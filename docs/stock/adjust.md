@@ -21,7 +21,7 @@ Add parts to a stock item record - for example putting parts back into stock. Th
 
 ## Remove Stock
 
-Revove parts from a stock item record - for example taking parts from stock for use. The in-stock quantity for each selected item is decreased by the given amount.
+Remove parts from a stock item record - for example taking parts from stock for use. The in-stock quantity for each selected item is decreased by the given amount.
 
 {% include img.html url='stock/stock_remove.png' description='Stock removal' %}
 
