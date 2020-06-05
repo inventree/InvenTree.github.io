@@ -12,7 +12,7 @@ InvenTree is designed to be lightweight and easy to use for SME or hobbyist appl
 
 ## How it Works
 
-InvenTree is a [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/) application which stores data in a relational database, and serves this data to the user(s) via a web brower, and (optionally) can be integrated into custom applications via an API.
+InvenTree is a [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/) application which stores data in a relational database, and serves this data to the user(s) via a web browser, and (optionally) can be integrated into custom applications via an API.
 
 InvenTree is designed to allow for a flexible installation. You could run the InvenTree server on Raspberry Pi SBC and have a simple single-user setup with a lightweight sqlite database. Or it can be run on the "cloud" using MySQL or PostgreSQL and support multiple simultaneous users.
 
