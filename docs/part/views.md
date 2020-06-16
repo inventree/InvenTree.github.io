@@ -81,7 +81,7 @@ If stock items are selected in the table, stock actions are enabled via the drop
 
 # Allocations
 
-The *Allocated* tab displays how many units of this part have been allocated to pending build orders and/or sales orders. This tab is only visible if the Part is a *component* (meaning it can be used to make assemblies), or it is *salable* (meanint it can be sold to customers).
+The *Allocated* tab displays how many units of this part have been allocated to pending build orders and/or sales orders. This tab is only visible if the Part is a *component* (meaning it can be used to make assemblies), or it is *salable* (meaning it can be sold to customers).
 
 # BOM
 
