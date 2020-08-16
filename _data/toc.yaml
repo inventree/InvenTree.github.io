@@ -53,6 +53,8 @@
 - title: Report
   url: "docs/report/report"
   children:
+    - title: Labels
+      url: "docs/report/labels"
     - title: Templates
       url: "docs/report/report"
     - title: Test Report
