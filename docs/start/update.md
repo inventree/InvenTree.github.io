@@ -17,16 +17,18 @@ Ensure the InvenTree server is stopped. This will depend on the particulars of y
 
 Update the InvenTree source code to the latest version (or a particular commit if required).
 
+For example, pull down the latest InvenTree sourcecode using Git:
+
 ```
 git pull origin master
 ```
 
 ## Perform Database Migrations
 
-Updating the database is as simple as calling the makefile target:
+Updating the database is as simple as calling the `update` script:
 
 ```
-make update
+invoke update
 ```
 
 This command performs the following steps:
