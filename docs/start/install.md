@@ -51,24 +51,6 @@ sudo apt-get install python3 python3-dev python3-pip g++ libpango-1.0-0 libpango
 
 {% include alert.html title="LaTeX Support" content="If you are intending to use InvenTree's LaTeX reporting capabilities, ensure that a valid LaTeX toolchain is configured on the system which is running the InvenTree installation." %}
 
-## Download Source Code
-
-Download the InvenTree source code to a local directory. It is recommended to perform this step using git, as this allows the InvenTree installation to be easily updated to the latest version.
-
-```
-git clone https://github.com/inventree/inventree/
-```
-
-Alternatively, the source can be downloaded as a [.zip archive](https://github.com/inventree/InvenTree/archive/master.zip).
-
-Once the source is downloaded, cd into the source directory:
-
-```
-cd /path/to/inventree/
-```
-
-*(substitute /path/to/inventree/ with the directory where you have downloaded the source code)*.
-
 ## Python Virtual Environment
 
 Installing the required Python packages inside a virtual environment allows a local install separate to the system-wide Python installation. While not strictly necessary, using a virtual environment is highly recommended as it prevents conflicts between the different Python installations.
@@ -91,11 +73,35 @@ This will place the current shell session inside a virtual environment - the ter
 
 InvenTree setup is performed using the [invoke](https://www.pyinvoke.org/) Python build tool. Various useful scripts are defined in the `tasks.py` file.
 
+Install invoke as follows:
+
+```
+pip3 install invoke
+```
+
 To display a list of the available configuration scripts, run the following command:
 
 ```
 invoke --list
 ```
+
+# Download Source Code
+
+Download the InvenTree source code to a local directory. It is recommended to perform this step using git, as this allows the InvenTree installation to be easily updated to the latest version.
+
+```
+git clone https://github.com/inventree/inventree/
+```
+
+Alternatively, the source can be downloaded as a [.zip archive](https://github.com/inventree/InvenTree/archive/master.zip).
+
+Once the source is downloaded, cd into the source directory:
+
+```
+cd /path/to/inventree/
+```
+
+*(substitute /path/to/inventree/ with the directory where you have downloaded the source code)*.
 
 # Installation
 
