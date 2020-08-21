@@ -39,14 +39,11 @@ By default, InvenTree uses an sqlite database file : ``inventree_db.sqlite3``. T
 * libmysqlclient-dev - *Required for connecting to the MySQL database in Python*
 * (pip) mysqlclient - *Python package for communication with MySQL database*
 
-To install these required packages, run the following commands:
+To install these required packages, run the following command:
 
 ```
-sudo apt-get install mysql-server libmysqlclient-dev
-pip3 install mysqlclient
+invoke mysql
 ```
-
-Alternatively, run the command `make mysql` to install the packages.
 
 It is then up to the database adminstrator to create a new MySQL database to store inventree data, in addition to a username/password to access the data.
 
@@ -66,11 +63,8 @@ The database options (in the ``config.yaml`` file) then need to be adjusted to c
 To install these required packages, run the following commands:
 
 ```
-sudo apt-get install postgresql postgresql-contrib libpq-dev
-pip3 install psycopg2
+invoke postgresql
 ```
-
-Alternatively, run the command `make postgresql` to install the packages.
 
 It is then up to the database adminstrator to create a new PostgreSQL database to store inventree data, in addition to a username/password to access the data.
 
