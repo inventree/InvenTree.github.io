@@ -23,11 +23,9 @@ Database selection should be determined by your particular installation requirem
 
 Once a database is setup, you need a way of accessing the data. InvenTree provides a "server" application out of the box, but this may not scale particularly well with multiple users. Instead, InvenTree can be served using a webserver such as [Gunicorn](https://gunicorn.org/). For more information see the [deployment documentation](/docs/start/deploy).
 
-# Installing InvenTree
+# Setup
 
 To install a complete *development* environment for InvenTree, follow the steps presented below. A production environment will require further work as per the particular application requirements. 
-
-A makefile in the root directory provides shortcuts for the installation process, and can also be very useful during development.
 
 {% include alert.html title="Windows" content="If you are using the Windows operating system, it is reccomended that you use the <a href='https://docs.microsoft.com/en-us/windows/wsl/install-win10'>WSL (Windows Subsystem for Linux) framework</a>" %}
 
@@ -39,18 +37,17 @@ To install InvenTree you will need the following system components installed:
 * python3-dev
 * python3-pip (pip3)
 * g++
-* make
 * libpango-1.0-0
 * libpangocairo-1.0-0
 
-Each of these programs need to be installed (e.g. using apt or similar) before running the ``make install`` script:
+Each of these programs need to be installed (e.g. using apt or similar) before running the setup scripts:
 
 ```
 sudo apt-get update
-sudo apt-get install python3 python3-dev python3-pip g++ make libpango-1.0-0 libpangocairo-1.0-0
+sudo apt-get install python3 python3-dev python3-pip g++ libpango-1.0-0 libpangocairo-1.0-0
 ```
 
-{% include alert.html title="sudo" content="apt-get commands will (most likely) be required to run under sudo. Take care not to run the makefile itself under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
+{% include alert.html title="sudo" content="apt-get commands will (most likely) be required to run under sudo. Take care not to run the installation scripts under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}
 
 {% include alert.html title="LaTeX Support" content="If you are intending to use InvenTree's LaTeX reporting capabilities, ensure that a valid LaTeX toolchain is configured on the system which is running the InvenTree installation." %}
 
@@ -90,14 +87,25 @@ This will place the current shell session inside a virtual environment - the ter
 
 {% include alert.html title="Activate virtual environment" content="Remember to activate the virtual environment when starting each shell session, before running Inventree commands. This will ensure that the correct environment is being used." %}
 
-## Installation
+## Invoke
+
+InvenTree setup is performed using the [invoke](https://www.pyinvoke.org/) Python build tool. Various useful scripts are defined in the `tasks.py` file.
+
+To display a list of the available configuration scripts, run the following command:
+
+```
+invoke --list
+```
+
+# Installation
 
 Now that the source code is downloaded (and optionally you have configured a Python virtual environment), the Python packages required to run InvenTree can be installed. InvenTree is a Python/Django application and relies on the pip package manager. All packages required to develop and test InvenTree are installed via pip. Package requirements can be found in ``requirements.txt``.
+
 
 To setup the InvenTree environment, run the following commands (from the InvenTree source directory):
 
 ```
-make install
+invoke install
 ```
 
 This installs all required Python packages using pip package manager. It also creates a (default) database configuration file which needs to be edited to meet user needs before proceeding (see next step below).
@@ -114,12 +122,14 @@ As part of the previous *install* step, a configuration file (**config.yaml**) i
 
 For further information on installation configuration, refer to the [Configuration](/docs/start/config) section.
 
+{% include alert.html title="Configure Database" content="Ensure database settings are correctly configured in config.yaml before proceeding to the next step!" %}
+
 ## Initialize Database
 
 Once install settings are correctly configured (in *config.yaml*) run the initial setup script:
 
 ```
-make migrate
+invoke migrate
 ```
 
 This performs the initial database migrations, creating the required tables, etc.
@@ -131,7 +141,7 @@ The database should now be installed!
 Create an initial superuser (administrator) account for the InvenTree instance:
 
 ```
-make superuser
+invoke superuser
 ```
 
 ## Run Development Server
@@ -141,28 +151,17 @@ The InvenTree database is now setup and ready to run. A simple development serve
 To launch the development server, run the following commands:
 
 ```
-cd InvenTree
-python manage.py runserver 127.0.0.1:8000
+invoke server
+```
+
+For more server options, run:
+
+```
+invoke server -h
 ```
 
 This will launch the InvenTree web interface at `http://127.0.0.1:8000`. For other options refer to the [django docs](https://docs.djangoproject.com/en/2.2/ref/django-admin/)
 
+## Run Production Server
+
 For a production install, refer to [deployment instructions](/docs/start/deploy).
-
-## Development and Testing
-
-Shorthand functions are provided for the development and testing process:
-
-* ``make install`` - Install all required underlying packages using PIP
-* ``make update`` - Update InvenTree installation (after database configuration)
-* ``make superuser`` - Create a superuser account
-* ``make migrate`` - Perform database migrations
-* ``make mysql`` - Install packages required for MySQL database backend
-* ``make postgresql`` - Install packages required for PostgreSQL database backend
-* ``make translate`` - Compile language translation files (requires gettext system package)
-* ``make backup`` - Backup database tables and media files
-* ``make test`` - Run all unit tests
-* ``make coverage`` - Run all unit tests and generate code coverage report
-* ``make style`` - Check Python codebase against PEP coding standards (using Flake)
-* ``make docreqs`` - Install the packages required to generate documentation
-* ``make docs`` - Generate this documentation
