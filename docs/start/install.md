@@ -31,20 +31,15 @@ To install a complete *development* environment for InvenTree, follow the steps 
 
 ## Requirements
 
-To install InvenTree you will need the following system components installed:
+To install InvenTree you will need python3 (>3.6) installed, as well as PIP (the Python package manager).
 
-* python3
-* python3-dev
-* python3-pip (pip3)
-* g++
-* libpango-1.0-0
-* libpangocairo-1.0-0
+Install these required programs (e.g. using apt or similar) before running the setup scripts.
 
-Each of these programs need to be installed (e.g. using apt or similar) before running the setup scripts:
+For example:
 
 ```
 sudo apt-get update
-sudo apt-get install python3 python3-dev python3-pip g++ libpango-1.0-0 libpangocairo-1.0-0
+sudo apt-get install python3 python3-dev python3-pip
 ```
 
 {% include alert.html title="sudo" content="apt-get commands will (most likely) be required to run under sudo. Take care not to run the installation scripts under sudo, as this may alter the system python path and cause the InvenTree installation to not work correctly" %}

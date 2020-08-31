@@ -13,6 +13,8 @@ The Django configuration parameters are found in the normal place (*settings.py*
 
 To support install specific settings, a simple configuration file ``config.yaml`` is provided. This configuration file is loaded by the InvenTree server at runtime. Settings specific to a given install should be adjusted in ``config.yaml``.
 
+{% include alert.html title="Config file location" content="The InvenTree config file is located at ./InvenTree/config.yaml" %}
+
 The default configuration file launches a *DEBUG* configuration with a simple SQLITE database backend. This default configuration file is shown below:
 
 
@@ -94,3 +96,18 @@ The default behaviour of the database backup is to generate backup files for dat
 ## Sentry.io Integration
 
 InvenTree supports [sentry.io](https://sentry.io) integration using the native django/sentry bindings. If you have a sentry.io account, create a new dsn and provide this in the `config.yaml` file.
+
+## LaTeX Support
+
+To enable genration of [LaTeX](https://en.wikipedia.org/wiki/LaTeX) reports, latex support must be enabled here.
+
+- **enabled** : Set to True to enable LaTeX support
+- **interpreter** : Select the LaTeX interpreter to be used (must be installed on the local machine!)
+
+## Authentication Backends
+
+Custom authentication backends can be used by specifying them here
+
+## Middleware
+
+Custom middleware layers can specified here.
