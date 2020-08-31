@@ -58,9 +58,10 @@ static_root: '../inventree_static'
 #  - git
 #  - ssh
 
-# Logging options
-# If debug mode is enabled, set log_queries to True to show aggregate database queries in the debug console
-log_queries: False
+# Set debug_toolbar to True to enable a debugging toolbar for InvenTree
+# Note: This will only be displayed if DEBUG mode is enabled, 
+#       and only if InvenTree is accessed from a local IP (127.0.0.1)
+debug_toolbar: False
 
 # Backup options
 # Set the backup_dir parameter to store backup files in a specific location
@@ -77,6 +78,7 @@ sentry:
 # LaTeX report rendering
 # InvenTree uses the django-tex plugin to enable LaTeX report rendering
 # Ref: https://pypi.org/project/django-tex/
+# Note: Ensure that a working LaTeX toolchain is installed and working *before* starting the server
 latex:
   # Select the LaTeX interpreter to use for PDF rendering
   # Note: The intepreter needs to be installed on the system!
@@ -85,3 +87,20 @@ latex:
   interpreter: pdflatex 
   # Extra options to pass through to the LaTeX interpreter
   options: ''
+
+# Permit custom authentication backends
+#authentication_backends:
+#  - 'django.contrib.auth.backends.ModelBackend'
+
+#  Custom middleware, sometimes needed alongside an authentication backend change.
+#middleware:
+#  - 'django.middleware.security.SecurityMiddleware'
+#  - 'django.contrib.sessions.middleware.SessionMiddleware'
+#  - 'django.middleware.locale.LocaleMiddleware'
+#  - 'django.middleware.common.CommonMiddleware'
+#  - 'django.middleware.csrf.CsrfViewMiddleware'
+#  - 'corsheaders.middleware.CorsMiddleware'
+#  - 'django.contrib.auth.middleware.AuthenticationMiddleware'
+#  - 'django.contrib.messages.middleware.MessageMiddleware'
+#  - 'django.middleware.clickjacking.XFrameOptionsMiddleware'
+#  - 'InvenTree.middleware.AuthRequiredMiddleware'
