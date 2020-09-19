@@ -1,0 +1,44 @@
+site_name: InvenTree Documentation
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  features:
+    - instant
+    - tabs
+nav:
+  - Home: index.md
+  - Contribute: contribute.md
+  - Getting Started:
+    - Installation: start/install.md
+    - Configuration: start/config.md
+    - Deploying: start/deploy.md
+    - Updating: start/update.md
+    - Migrating: start/migrate.md
+  - Parts:
+    - Parts: 404.md
+  - Stock:
+    - Stock: 404.md
+  - Build:
+    - Build: 404.md
+  - Buy:
+    - Buy: 404.md
+  - Report:
+    - Report: 404.md
+  - Admin:
+    - Admin: 404.md
+  - Extend:
+    - Extend: 404.md
+
+plugins:
+  - search
+  - macros:
+      include_dir: _includes
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - markdown.extensions.codehilite
