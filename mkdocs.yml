@@ -9,6 +9,7 @@ google_analytics: ['UA-143467500-1', 'InvenTree.github.io']
 # Theme
 theme:
   name: material
+  custom_dir: _includes/overrides
   palette:
     scheme: slate
   logo: assets/logo.png
