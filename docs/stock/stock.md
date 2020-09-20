@@ -3,15 +3,15 @@ title: Stock
 layout: page
 --- 
 
-# Stock Location
+## Stock Location
 
 A stock location represents a physical real-world location where *Stock Items* are stored. Locations are arranged in a cascading manner and each location may contain multiple sub-locations, or stock, or both.
 
-# Stock Item
+## Stock Item
 
-A *Stock Item* is an actual instance of a [*Part*](/part.html) item. It represents a physical quantity of the *Part* in a specific location.
+A *Stock Item* is an actual instance of a [*Part*](/part/part) item. It represents a physical quantity of the *Part* in a specific location.
 
-## Stock Item Details
+### Stock Item Details
 
 The *Stock Item* detail view shows information regarding the particular stock item:
 
@@ -31,7 +31,7 @@ The *Stock Item* detail view shows information regarding the particular stock it
 
 **Status** - Status of this stock item
 
-## Stock Tracking
+### Stock Tracking
 
 Every time a *Stock Item* is adjusted, a *Stock Tracking* entry is automatically created. This ensures a complete history of the *Stock Item* is maintained as long as the item is in the system.
 

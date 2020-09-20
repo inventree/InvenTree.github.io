@@ -3,10 +3,12 @@ title: Purchase Order
 layout: page
 ---
 
-# Purchase Orders
+## Purchase Orders
 
-{% include alert.html title="TODO" content="This section requires further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-# Line Items
+## Line Items
 
-{% include alert.html title="TODO" content="This section requires further work" %}
+!!! missing "TODO"
+	This section requires further work

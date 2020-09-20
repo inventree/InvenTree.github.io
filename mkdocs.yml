@@ -1,5 +1,6 @@
 # Project
 repo_url: https://github.com/inventree/InvenTree.github.io
+repo_name: inventree/InvenTree.github.io
 site_name: InvenTree Documentation
 site_description: InvenTree - Open Source Inventory Management
 site_author: InvenTree
@@ -12,6 +13,8 @@ theme:
     scheme: slate
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   features:
     - instant
     - tabs
@@ -35,13 +38,22 @@ nav:
     - Template Parts: part/template.md
     - Tests: part/test.md
   - Stock:
-    - Stock: 404.md
+    - Stock Items: stock/stock.md
+    - Adjusting Stock: stock/adjust.md
+    - Stocktake: stock/stocktake.md
+    - Test Results: stock/test.md
   - Build:
-    - Build: 404.md
+    - Build Parts: build/build.md
+    - BOM: build/bom.md
   - Buy:
-    - Buy: 404.md
+    - Suppliers: buy/supplier.md
+    - Purchase Orders: buy/po.md
   - Report:
-    - Report: 404.md
+    - Labels: report/labels.md
+    - Templates: report/report.md
+    - Test Reports: report/test.md
+    - Packing List: report/pack.md
+    - Order: report/order.md
   - Admin:
     - Admin: 404.md
   - Extend:
