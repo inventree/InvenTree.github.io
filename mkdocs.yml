@@ -55,9 +55,14 @@ nav:
     - Packing List: report/pack.md
     - Order: report/order.md
   - Admin:
-    - Admin: 404.md
+    - Admin Interface: admin/admin.md
+    - Export Data: admin/export.md
+    - Import Data: admin/import.md
   - Extend:
-    - Extend: 404.md
+    - API: extend/api.md
+    - Python Interface: extend/python.md
+    - Plugins: extend/plugins.md
+    - Third-Party: extend/integrate.md
 
 # Plugins
 plugins:
