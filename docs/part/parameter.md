@@ -3,6 +3,7 @@ title: Part Parameters
 layout: page
 --- 
 
-# Part Parameters
+## Part Parameters
 
-{% include alert.html title="TODO" content="Parameter documentation to be written" %}
+!!! missing "TODO"
+	Parameter documentation to be written

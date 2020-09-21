@@ -3,41 +3,48 @@ title: Custom Labels
 layout: page
 ---
 
-# Custom Labels
+## Custom Labels
 
 InvenTree supports printing of custom template-based labels, using the [blabel](https://github.com/Edinburgh-Genome-Foundry/blabel) plugin for Python.
 
 Custom labels can be generated using simple HTML templates, with support for QR-codes, and conditional formatting using the Jinja template engine.
 
-{% include alert.html title="Documentation" content="Refer to the blabel documentation for further information" %}
+!!! info "Documentation"
+	Refer to the blabel documentation for further information
 
-## Creating Labels
+### Creating Labels
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-## Stylesheet
+### Stylesheet
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-## Context Data
+### Context Data
 
 Each label template is supplied with *context data* (variables) which can be used to display information based on the context in which the label is printed.
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-## QR Codes
+### QR Codes
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-## Conditional Formatting
+### Conditional Formatting
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-# Stock Labels
+## Stock Labels
 
-{% include alert.html title="TODO" content="This section needs further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-## Context Data
+### Context Data
 
 In addition to the global label context data, the following variables are made available to the StockItem label template:
 

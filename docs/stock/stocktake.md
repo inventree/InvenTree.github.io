@@ -3,6 +3,7 @@ title: Stocktake
 layout: page
 ---
 
-# Stocktake
+## Stocktake
 
-{% include alert.html title="TODO" content="This section requires further work" %}
+!!! missing "TODO"
+	This section requires further work

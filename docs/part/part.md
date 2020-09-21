@@ -13,7 +13,9 @@ Part categories are very flexible and can be easily arranged to match a particul
 
 Each part category also shows a list of sub-categories which exist underneath it.
 
-{% include img.html url="part/part_category.png" description="Parts are arranged in categories" %}
+{% with id="part_category", url="part/part_category.png", description="Parts are arranged in categories" %}
+{% include 'img.html' %}
+{% endwith %}
 
 The category part list provides an overview of each part:
 
@@ -24,5 +26,5 @@ The category part list provides an overview of each part:
 
 The list of parts underneath a given category can be filtered by multiple user-configurable filters, which is especially useful when a large number of parts exist under a certain category.
 
-Clicking on the part name links to the [*Part Detail*](/docs/part/views) view.
+Clicking on the part name links to the [*Part Detail*](/part/views) view.
 

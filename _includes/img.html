@@ -1,16 +1,24 @@
 <figure class='image'>
-    {% if include.nolink %}
-    {% else %}
-    <a href="/assets/img/{{ include.url }}">
+    {% if id %}
+    <!-- The link that, when clicked, will display the image in full screen -->
+    <a href="#{{ id }}">
+    {% elif url %}
+    <a href="/assets/images/{{ url }}">
     {% endif %}
-        <img class='img-inline' src='/assets/img/{{ include.url }}' alt='{{ include.description }}' title='{{ include.description }}'
-        {% if include.maxwidth or include.maxheight %}style='
-        {% if include.maxwidth %} max-width:{{ include.maxwidth }};{% endif %}
-        {% if include.maxheight %} max-height: {{ include.maxheight }};{% endif %}
+        <img class='img-inline' src='/assets/images/{{ url }}' alt='{{ description }}' title='{{ description }}'
+        {% if maxwidth or maxheight %}style='
+        {% if maxwidth %} max-width:{{ maxwidth }};{% endif %}
+        {% if maxheight %} max-height: {{ maxheight }};{% endif %}
         '{% endif %}
         >
-    {% if include.nolink %}
-    {% else %}
+    {% if id or url %}
+    </a>
+    {% endif %}
+
+    {% if id %}
+    <!-- The full screen image, hidden by default  -->
+    <a href="#_" class="overlay" id="{{ id }}">
+      <img src="/assets/images/{{ url }}" alt="{{ description }}" />
     </a>
     {% endif %}
 </figure>

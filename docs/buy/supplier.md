@@ -3,14 +3,14 @@ title: Suppliers
 layout: page
 ---
 
-# Suppliers
+## Suppliers
 
 A supplier is an external vendor of parts and raw materials.
 
-{% include alert.html title="TODO" content="This section requires further work" %}
+!!! missing "TODO"
+	This section requires further work
 
-# Supplier Parts
+## Supplier Parts
 
-{% include alert.html title="TODO" content="This section requires further work" %}
-
-
+!!! missing "TODO"
+	This section requires further work
